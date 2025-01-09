@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+  <title>Joel Gethin Lewis: Introduction to 👩🏽‍🎤🤖 Creative Computing 2022 Intensive</title>
+
+  <!-- This whole presentation was made with Big: https://github.com/tmcw/big -->
+
+  <link href="big.css" rel="stylesheet" type="text/css" />
+  <script>
+    BIG_ASPECT_RATIO = false;
+  </script>
+
+  <script src="big.js"></script>
+  <link href="themes/lightWhite.css" rel="stylesheet" type="text/css" />
+
+  <!-- Favicon link below, via https://emojitofavicon.com -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🖖🏻</text></svg>">
+  <link rel="manifest" href="site.webmanifest">
+
+  <!-- Twitter Card fun: https://developer.twitter.com/en/docs/twitter-for-websites/cards/guides/getting-started -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@joelgethinlewis" />
+  <meta name="twitter:creator" content="@joelgethinlewis" />
+  <style>
+    body {
+      background-color: #EDD1B0;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    UAL CCI: Introduction to Creative Computing Intensive 2022: 🔢 & 🐘: Lecture 2: Counting and Remembering.<br /><a href="index.html">Back to slide index</a>.
+  </div>
+  <div>By the end of this lecture, we'll have learnt about:
+    <ul>
+      <li>Two references on how to help each other</li>
+      <li>How computers remember things and Grace Hopper</li>
+      <li>Counting, specifically counting in Binary</li>
+      <li>Computer memory</li>
+      <li>How JavaScript remembers different kinds of information also known as data types</li>
+      <li>Two films - one about the scale of the universe and the other about really really really really big numbers</li>
+    </ul>
+  </div>
+  <div>A pair of thoughts on how to help each other.</div>
+  <div>
+    <iframe src="https://player.vimeo.com/video/38247060" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+    <p><a href="https://vimeo.com/38247060">Austin&#039;s Butterfly: Building Excellence in Student Work</a> from <a href="https://twitter.com/rgordon/status/1159276903670439937">Russell Gordon</a></p>
+  </div>
+  <div>
+    <a href="https://twitter.com/aireadee/status/1174088807446192129">Getting
+      rid of value words</a> by <a href="https://twitter.com/aireadee">Airea D. Matthews</a>. I'd recommend you get two books to accompany this course: <a href="https://natureofcode.com">The Nature of Code</a> and <a href="https://mitpress.mit.edu/books/code-creative-medium">Code as Creative Medium</a>. <a href=" https://vimeo.com/channels/everyframeapainting/133693532">Why reading is important</a>.
+  </div>
+  <div>We are going to start this lecture series by learning about counting, specifically binary numbers, what they are and why computers use them.</div>
+  <div>Then we are going to learn about how computers remember information. Computers store this information in things called constants (if they never change) or variables (if they change). Constants are useful (for things like Pi or the number of days in a week), but we are going to use variables much more.</div>
+  <div>All that computers do is remember things by storing data (as constants or variables) and change those memories through commands. One thing they are very good at is remembering a number and then adding to it. If you want to read a great book on how computers work from the ground up, I recommend <a href="https://www.charlespetzold.com/code/">Code by Charles Pertzold</a>.</div>
+  <div>One of my favourite pioneers in the world of computing is <a href="https://en.wikipedia.org/wiki/Grace_Hopper">Grace Hopper</a>. Here is a great video where she <a href="https://www.youtube.com/watch?v=9eyFDBPk4Yw">explains what a nanosecond is - in terms of distance travelled at the speed of light in that time</a>. (BTW, <a href="https://www.youtube.com/watch?v=ZR0ujwlvbkQ">the whole lecture is well worth watching</a>). Amongst other things, Grace Hopper invented the compiler - which is how a computer turns a bunch of (human readable)code into a bunch of binary that it can understand natively. The same thing is going to happen to your p5.js code (or sketches) - when you press run on the p5.js online editor, the JavaScript code is translated into machine friendly forms, which are eventually run as binary on your own computer.</div>
+  <div>Now, finally, to counting. What is counting?</div>
+  <div>
+    Counting is using groups of symbols to represent quantities or amounts. Let's count to 100 in <a href="https://en.wikipedia.org/wiki/Decimal">Decimal</a>. When do
+    we need an extra digit?
+  </div>
+  <div>Let's count to 10 in <a href="https://en.wikipedia.org/wiki/Unary_numeral_system">Unary</a>.</div>
+  <div>
+    Let's count to 20 in <a href="https://en.wikipedia.org/wiki/Binary_number">Binary</a>. When
+    do we need an extra digit?
+  </div>
+  <div>
+    What's the biggest number you can count to on your fingers in unary (or the way you were taught as a child)? What about in binary? What about if you use your fingers AND toes?
+  </div>
+  <div>Tell the binary joke Joel!</div>
+  <div>I loved this visualisation of a mechanical binary counter: <blockquote class="twitter-tweet">
+      <p lang="en" dir="ltr">How a mechanical binary counter works.<a href="https://t.co/KI875l9VzD">pic.twitter.com/KI875l9VzD</a></p>&mdash; Universal Curiosity (@UniverCurious) <a href="https://twitter.com/UniverCurious/status/1337178515943387140?ref_src=twsrc%5Etfw">December 10, 2020</a>
+    </blockquote>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </div>
+  <div>
+    Computers use binary to represent everything in <a href="https://en.wikipedia.org/wiki/Computer_memory">memory</a>. Why? Why is binary well suited to digital computers? <a href="https://youtu.be/gI-qXk7XojA?t=39">This video has a good explanation</a>.</div>
+  <div>Words for different quantities of binary numbers, that you might have heard of before:
+    <ul>
+      <li>A bit is a Binary digIT.</li>
+      <li>A byte is eight bits. (BEight).</li>
+      <li>A kilobyte is 1,024 (2^10) bytes, <a href="https://en.wikipedia.org/wiki/Kilobyte">mostly</a>.
+      </li>
+      <li>A megabyte is 1,048,576 (2^20) bytes, <a href="https://en.wikipedia.org/wiki/Megabyte">mostly</a>.</li>
+    </ul>
+  </div>
+  <div>
+    <ul>
+      <li>One megabyte is approximately one minute of 128 kbit/s MP3 compressed music.</li>
+      <li>One megabyte is six seconds of uncompressed CD audio.</li>
+      <li>One megabyte is a typical English book volume in plain text format (500 pages × 2000
+        characters per page).</li>
+      <li>The human genome consists of DNA representing 800 MB of data. The parts that differentiate one person from another can be compressed to 4 MB!</li>
+    </ul>
+  </div>
+  <div>
+    <ul>
+      <li>There are different ways of storing numbers and words in computers, as a whole these values
+        are known as <a href="https://en.wikipedia.org/wiki/Data_type">Data types</a>. Data types can be variable or constant - as mentioned earlier.</li>
+      <li>Whole numbers or Integers are stored as <a href="https://en.wikipedia.org/wiki/Integer_%28computer_science%29">ints</a>. E.g. 0, 5,
+        -567.</li>
+      <li>Numbers which are in between whole numbers are stored as <a href="https://en.wikipedia.org/wiki/Floating-point_arithmetic">Floating Points or
+          floats</a>. E.g. 3.142 or -5.66343.</li>
+      <li>As these numbers are stored in certain amounts of memory, if they get too big (or negative,
+        or precise) the computer can run out of memory to store them, or overflow. This is bad. See
+        the <a href="https://en.wikipedia.org/wiki/Year_2000_problem">Y2K bug</a>.</li>
+    </ul>
+  </div>
+  <div>
+    <ul>
+      <li>You can also store individual characters of the alphabet as <a href="https://en.wikipedia.org/wiki/Character_(computing)">chars</a>.</li>
+      <li>However, there are different encodings of characters - <a href="https://en.wikipedia.org/wiki/ASCII">ASCII</a> and <a href="https://en.wikipedia.org/wiki/Unicode">Unicode</a> for example - which allow
+        different character sets to be displayed.</li>
+      <li>You can store words (multiple characters) in strings - which are actually just lists of
+        chars.</li>
+      <li>Another name for lists are <a href="https://en.wikipedia.org/wiki/Associative_array">arrays</a>.
+      </li>
+      <li>Strings are one <a href="https://en.wikipedia.org/wiki/Dimension">dimensional</a> arrays.
+        We'll be discussing more about arrays or lists in lecture 5.</li>
+      <li>Remember: data can be stored as fixed values (<a href="https://en.wikipedia.org/wiki/Constant_(computer_programming)">constants</a>) or
+        values that can change (<a href="https://en.wikipedia.org/wiki/Variable_%28computer_science%29">variables</a>).
+      </li>
+      <li>Here is <a href="https://editor.p5js.org/benmoren/sketches/AInooo_4o">a fun Unicode example written in p5.js</a>.</li>
+    </ul>
+  </div>
+  <div>Let's try out some JavaScript variables by going through the <a href="https://github.com/processing/p5.js/wiki/JavaScript-basics">JavaScript basics page on the p5.js wiki</a>, all the way up to the <a href="https://github.com/processing/p5.js/wiki/JavaScript-basics#maths-functions">Math (sic) functions section</a>. You are going to encounter "functions" while I go through the page - they are just ways of packaging up several commands in one bigger command - remember that computers only remember things and change those memories with commands.</div>
+  <div>All lines in JavaScript must finish with a ";" - it's just a way that the computer works out which line is which.</div>
+  <div>The two really important things I want you to remember from that is that you can use the "let" keyword to make new data (or variables) - e.g. <i>let myName = "Joel";</i> and that you can do things with data using commands (or functions) - e.g. <i>console.log(myName);</i>, which prints out the value of myName ("Joel") to the JavaScript console.</div>
+  <div>Let's finish with two films about the scale of the universe and the scale of numbers.</div>
+  <div>
+    Artwork: Powers of Ten by the Eames Office<br><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/0fKBhvDjuy0?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  </div>
+  <div>
+    A good example of a really really really really really big number is <a href="https://en.wikipedia.org/wiki/Graham%27s_number">Graham's Number</a>.
+    <br /><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/GuigptwlVHo?rel=0&amp;controls=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe><br />For more information, see <a href="https://waitbutwhy.com/2014/11/1000000-grahams-number.html">this article on the fantastic Wait But Why</a>.
+  </div>
+  <div>
+    Thanks! Time for a short break!
+    <br />
+    <a href="index.html">Back to slide index</a>.
+  </div>
+</body>
+
+</html>
